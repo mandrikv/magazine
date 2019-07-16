@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 
 const ImgBlock = styled.div`
     display: flex;
+    align-items: flex-start;
     flex: 1 1 150px;
 `;
 
