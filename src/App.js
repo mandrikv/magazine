@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Wrapper, Block } from './components/ui';
+import Header from './components/Header/Header';
+
+import List from './components/List/List';
+
+const data = require('./data/articles');
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+        <Header/>
+        <Block>
+            <List data={data}/>
+        </Block>
+    </Wrapper>
   );
 }
 
