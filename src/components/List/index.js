@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Item from '../Item/Item';
-import Pagination from '../Pagination/Pagination';
+import Item from '../Item';
+import Pagination from '../Pagination';
 
 class List extends Component {
     constructor(props) {

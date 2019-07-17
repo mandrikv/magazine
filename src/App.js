@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Wrapper, Block } from './components/ui';
-import Header from './components/Header/Header';
-
-import List from './components/List/List';
+import Header from './components/Header';
+import List from './components/List';
 
 const data = require('./data/articles');
 
