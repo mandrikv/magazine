@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "prettier",
+    "airbnb"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules":{
+    "no-param-reassign":  ["error", { "props": false }],
+    "max-len": ["error", 120, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": true,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": false
+    }],
+    "linebreak-style": [0, "windows"], // dif \n osx vs win
+    "react/jsx-filename-extension": [2, {
+      "extensions": [".js"]
+    }],
+    "react/jsx-no-bind": [2, {
+      "ignoreRefs": false,
+      "allowArrowFunctions": false,
+      "allowBind": false
+    }],
+    "no-console": "off",
+    "react/forbid-prop-types": [2, { "forbid": ["any", "array"] }],
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/label-has-for": "off",
+    "no-mixed-operators": ["off"],
+    "no-underscore-dangle":"off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

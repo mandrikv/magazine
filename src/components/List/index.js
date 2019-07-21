@@ -1,66 +1,34 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Item from '../Item';
-import Pagination from '../Pagination';
 
 class List extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            items: props.data,
-            array: props.data,
-            limitItems: 5,
-            currentPage: 1,
-            startItem: 0,
-            endItem: 5,
-        };
-        this.onClick = this.onClick.bind(this);
-    }
+  getItems = () => {
+    return this.props.items.map((item, index) => (
+      <Item
+        key={index}
+        data={item}
+      />
+    ));
+  };
 
-    shouldComponentUpdate(nextProps, nextState, nextContext) {
-        const {currentPage} = this.state;
-        const {currentPage: currentPageNext} = nextState;
-        return currentPage !== currentPageNext;
-    }
-
-    getItems = () => {
-        const { startItem, endItem, array = [] }  = this.state;
-        return array.slice(startItem, endItem).map((item, index) => (
-                <Item
-                    key={index}
-                    data={item}
-                />
-            )
-        );
-    };
-
-    onClick = (page) => (event) => {
-        this.setState(prevState => {
-            const {limitItems} = prevState;
-
-            return {
-                currentPage: page,
-                startItem: page * limitItems - limitItems,
-                endItem: page * limitItems,
-            }
-        });
-    };
-
-    render() {
-        const {items, limitItems, currentPage} = this.state;
-        return(
-            <div>
-                <div className="items">
-                    {this.getItems()}
-                </div>
-                <Pagination
-                    length={items.length}
-                    limit={limitItems}
-                    func={this.onClick}
-                    currentPage={currentPage}
-                />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <div className="items">
+          {this.getItems()}
+        </div>
+      </div>
+    );
+  }
 }
 
-export default List;
+function mapStateToProps(state) {
+  return {
+    items: state.ads.items,
+  };
+}
+
+export default connect(
+  mapStateToProps,
+)(List);

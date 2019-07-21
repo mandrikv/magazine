@@ -1,0 +1,22 @@
+# Set to true to
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+# character set
+charset = utf-8
+# line break representation
+end_of_line = lf
+# Remove whitespace at the end of lines
+trim_trailing_whitespace = true
+# Insert a line at the end of a file
+insert_final_newline = true
+
+# applies to js files inside the src folder
+[src/**.js]
+indent_style = space
+indent_size = 2
+
+[{package.json,.eslintrc.json}]
+indent_style = space
+indent_size = 2
