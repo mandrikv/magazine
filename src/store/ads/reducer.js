@@ -9,7 +9,7 @@ export default function (state = initialState, { type, payload }) {
     case ADS_SET_ITEMS: {
       return {
         ...state,
-        items: payload,
+        items: payload.items,
       };
     }
 
