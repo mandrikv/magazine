@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { setAdsItems } from '../../store/ads/action';
-import Pagination from './PaginationComponens';
+import Pagination from './Pagination.component';
 
 const mapStateToProps = ({ ads }) => ({
   items: ads.items,

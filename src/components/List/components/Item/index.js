@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'sharedUi';
 import {
   ItemBlock,
   Wrapper,
   ImgBlock,
   ContentBlock,
 } from './styles';
-import { Button } from '../ui';
 
 function Item(props) {
   const { data } = props;

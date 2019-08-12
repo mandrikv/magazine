@@ -1,35 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Item from '../Item';
+import Item from './components/Item';
 
-class List extends Component {
-  render() {
-    const { items } = this.props;
-    return (
-      <div>
-        <div className="items">
-          { items.map((item, index) => (
-            <Item
-              key={index}
-              data={item}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  }
+function List(props) {
+  const { items } = props;
+
+  return (
+    <div className="items">
+      {items.map(item => (
+        <Item
+          key={item.order}
+          data={item}
+        />
+      ))}
+    </div>
+  );
 }
 
 List.propTypes = {
   items: PropTypes.array.isRequired,
 };
 
-function mapStateToProps(state) {
-  return {
-    items: state.ads.items,
-  };
-}
+const mapStateToProps = ({ ads }) => ({
+  items: ads.items,
+});
 
 export default connect(
   mapStateToProps,

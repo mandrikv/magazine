@@ -27,4 +27,9 @@ const ContentBlock = styled.div`
     padding-left: 40px;
 `;
 
-export { ItemBlock, Wrapper, ImgBlock, ContentBlock };
+export {
+  ItemBlock,
+  Wrapper,
+  ImgBlock,
+  ContentBlock,
+};

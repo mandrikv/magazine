@@ -1,11 +1,11 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import './App.css';
-import { Wrapper, Block } from 'components/ui';
+import 'App.css';
+import { Wrapper, Block } from 'sharedUi';
 import Header from 'components/Header';
 import List from 'components/List';
-import Pagination from 'containers/Pagination';
-import store from './store';
+import Pagination from 'components/Pagination';
+import store from 'store';
 
 function App() {
   return (

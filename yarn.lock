@@ -3116,6 +3116,13 @@ data-urls@^1.0.0, data-urls@^1.1.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
+data@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/data/-/data-0.6.1.tgz#f363b07224f48e7cfd71d3df46c4b11f6f8e5f75"
+  integrity sha1-82OwciT0jnz9cdPfRsSxH2+OX3U=
+  dependencies:
+    "0" underscore
+
 date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
@@ -9515,6 +9522,11 @@ uglify-js@^3.1.4:
   dependencies:
     commander "~2.20.0"
     source-map "~0.6.1"
+
+underscore@:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
+  integrity sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

@@ -4,5 +4,7 @@ import {
 
 export const setAdsItems = items => ({
   type: ADS_SET_ITEMS,
-  payload: items,
+  payload: {
+    items,
+  },
 });
