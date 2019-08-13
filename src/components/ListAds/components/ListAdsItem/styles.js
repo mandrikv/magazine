@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ItemBlock = styled.div`
+const ItemBlock = styled.li`
     margin-bottom: 80px;
 
     &:not(:last-child) {
@@ -10,7 +10,7 @@ const ItemBlock = styled.div`
     }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
     display: flex;
 `;
 

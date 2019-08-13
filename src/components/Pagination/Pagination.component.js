@@ -12,11 +12,9 @@ class Pagination extends Component {
     super(props);
 
     this.state = {
-      array: data,
+      items: data,
       limitItems: 3,
       currentPage: 1,
-      startItem: 0,
-      endItem: 3,
     };
   }
 
@@ -25,38 +23,33 @@ class Pagination extends Component {
   }
 
   onClick = page => () => {
-    this.setState((prevState) => {
-      const { limitItems } = prevState;
-
-      return {
-        currentPage: page,
-        startItem: page * limitItems - limitItems,
-        endItem: page * limitItems,
-      };
-    }, () => {
+    this.setState(() => ({
+      currentPage: page,
+    }), () => {
       this.filterPage();
     });
   };
 
   filterPage = () => {
     const {
-      startItem,
-      endItem,
-      array = [],
+      currentPage,
+      limitItems,
+      items = [],
     } = this.state;
 
     const {
       setAdsItems,
     } = this.props;
 
-    const currentItems = array.slice(startItem, endItem);
+    const currentItems = items.slice(
+      currentPage * limitItems - limitItems,
+      currentPage * limitItems,
+    );
 
     setAdsItems(currentItems);
   };
 
   render() {
-    console.log('render');
-
     return (
       <div className="pagination">
         <Pages

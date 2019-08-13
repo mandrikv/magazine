@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import 'App.css';
 import { Wrapper, Block } from 'sharedUi';
 import Header from 'components/Header';
-import List from 'components/List';
+import ListAds from 'components/ListAds';
 import Pagination from 'components/Pagination';
 import store from 'store';
 
@@ -13,7 +13,7 @@ function App() {
       <Wrapper>
         <Header />
         <Block>
-          <List />
+          <ListAds />
           <Pagination />
         </Block>
       </Wrapper>

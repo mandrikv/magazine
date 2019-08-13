@@ -8,15 +8,13 @@ const propTypes = {
 };
 
 const Pages = (props) => {
-  console.log('Pages');
-
   const {
     currentPage,
-    array,
+    items,
     limitItems,
   } = props.data;
 
-  const allPage = Math.ceil(array.length / limitItems);
+  const allPage = Math.ceil(items.length / limitItems);
   const output = [];
 
   let n = 1;

@@ -2,29 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8113e4ed-4f4a-4549-9380-eecd787f3f8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Pagination/components/Pages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Pagination/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Pagination/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sharedUi/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ListAds/ListAds.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ListAds/ListAds.container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ListAds/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/articles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/articles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Item/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/components/Item/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Item/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/components/Item/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sharedUi/Block.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sharedUi/Wrapper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sharedUi/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Pagination/PaginationComponens.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/Pagination.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Pagination/PaginatoinConteiners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/Paginatoin.container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Pagination/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Pagination/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/components/Pages/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/articles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/articles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/ads/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ads/action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/List/components/Item/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListAds/components/ListAdsItem/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/List/components/Item/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListAds/components/ListAdsItem/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/List/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListAds/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pagination/Pagination.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/Pagination.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pagination/components/Pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/components/Pages/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Pagination/components/Pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gatsby" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -125,6 +114,9 @@
       <workItem from="1565118463262" duration="8695000" />
       <workItem from="1565335778497" duration="844000" />
       <workItem from="1565444086354" duration="3880000" />
+      <workItem from="1565632622361" duration="737000" />
+      <workItem from="1565636799149" duration="661000" />
+      <workItem from="1565645514894" duration="5944000" />
     </task>
     <servers />
   </component>
