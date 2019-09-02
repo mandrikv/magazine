@@ -1,6 +1,6 @@
 import React from 'react';
-import { Li, Ul } from './styles';
 import PropTypes from 'prop-types';
+import { Li, Ul } from './styles';
 
 const propTypes = {
   data: PropTypes.object.isRequired,

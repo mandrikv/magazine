@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ListAdsItem from './components/ListAdsItem';
-import Ul from './styles'
+import Ul from './styles';
 
 const propTypes = {
   items: PropTypes.array.isRequired,
