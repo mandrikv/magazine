@@ -2,20 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const BlockWrapper = styled.div`
-  max-width: 400px;
+const ListAdsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  list-style: none;
   padding: 20px 40px;
   border-radius: 4px;
   box-shadow: 0px 5px 20px 5px rgba(189,170,189,0.5);
 `;
 
 const Block = ({ children }) => (
-  <BlockWrapper className="block">
+  <ListAdsWrapper className="l-ads__wrapper">
     {children}
-  </BlockWrapper>
+  </ListAdsWrapper>
 );
 
 Block.propTypes = {

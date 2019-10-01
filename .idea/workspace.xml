@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8113e4ed-4f4a-4549-9380-eecd787f3f8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ListAds/ListAds.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ListAds/ListAds.container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ListAds/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllAds/AllAds.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllAds/AllAds.container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllAds/components/ListAds/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllAds/components/PaginationAds/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllAds/components/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllAds/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllAds/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/articles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/articles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/components/Item/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListAds/components/ListAdsItem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/components/Item/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListAds/components/ListAdsItem/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListAds/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pagination/Pagination.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/Pagination.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pagination/components/Pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/components/Pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListAds/ListAds.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListAds/ListAds.container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListAds/components/ListAdsItem/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListAds/components/ListAdsItem/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListAds/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListAds/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharedUi/Block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sharedUi/Block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharedUi/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sharedUi/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharedUi/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sharedUi/Wrapper.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +32,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -116,7 +137,21 @@
       <workItem from="1565444086354" duration="3880000" />
       <workItem from="1565632622361" duration="737000" />
       <workItem from="1565636799149" duration="661000" />
-      <workItem from="1565645514894" duration="5944000" />
+      <workItem from="1565645514894" duration="7062000" />
+      <workItem from="1565721348840" duration="37000" />
+      <workItem from="1565728244896" duration="1657000" />
+      <workItem from="1565806570879" duration="13000" />
+      <workItem from="1565811028755" duration="606000" />
+      <workItem from="1565812506415" duration="1275000" />
+      <workItem from="1565899907736" duration="85000" />
+      <workItem from="1566843610832" duration="42000" />
+      <workItem from="1566850291204" duration="918000" />
+      <workItem from="1566935824387" duration="798000" />
+      <workItem from="1567451135325" duration="4000" />
+      <workItem from="1567451152189" duration="2472000" />
+      <workItem from="1567608955440" duration="1716000" />
+      <workItem from="1567669518419" duration="2775000" />
+      <workItem from="1569866431127" duration="16845000" />
     </task>
     <servers />
   </component>

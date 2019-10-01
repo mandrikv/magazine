@@ -1,22 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+const propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 const WrapperContent = styled.div`
-    display: flex;
-    flex-direction: column;
 `;
 
 const Content = styled.div`
-    padding: 0 32px 100px;
-    
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
 `;
 
 const Wrapper = ({ children }) => (
-    <WrapperContent className="wrapper">
-        <Content className="content">
-            {children}
-        </Content>
-    </WrapperContent>
+  <WrapperContent className="wrapper">
+    <Content className="container">
+      {children}
+    </Content>
+  </WrapperContent>
 );
 
+Wrapper.propTypes = propTypes;
 export default Wrapper;

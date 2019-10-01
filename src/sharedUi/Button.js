@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
   children: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 const Btn = styled.button`
@@ -12,8 +13,8 @@ const Btn = styled.button`
     align-self: flex-start;
 `;
 
-const Button = ({ children }) => (
-  <Btn>
+const Button = ({ children, className }) => (
+  <Btn className={className}>
     {children}
   </Btn>
 );
