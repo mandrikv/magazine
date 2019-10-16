@@ -5,6 +5,11 @@ import PropTypes from 'prop-types';
 const propTypes = {
   children: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
+  fn: PropTypes.func,
+};
+
+const defaultProps = {
+  fn: {},
 };
 
 const Btn = styled.button`
@@ -13,11 +18,15 @@ const Btn = styled.button`
     align-self: flex-start;
 `;
 
-const Button = ({ children, className }) => (
-  <Btn className={className}>
+const Button = ({ children, className, fn }) => (
+  <Btn
+    className={className}
+    onClick={fn()}
+  >
     {children}
   </Btn>
 );
 
 Button.propTypes = propTypes;
+Button.defaultProps = defaultProps;
 export default Button;

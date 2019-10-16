@@ -19,7 +19,7 @@ const Block = ({ children }) => (
 );
 
 Block.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Block;

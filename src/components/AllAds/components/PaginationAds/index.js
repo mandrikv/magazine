@@ -4,21 +4,21 @@ import { PaginationItem } from '../styles';
 
 const propTypes = {
   item: PropTypes.number.isRequired,
-  currentPage: PropTypes.number.isRequired,
+  page: PropTypes.number.isRequired,
   fn: PropTypes.func.isRequired,
 };
 
 const PaginationAds = (props) => {
   const {
     item,
-    currentPage,
+    page,
     fn,
   } = props;
 
   return (
     <PaginationItem
-      className={`${currentPage === item && 'active'} b-pagination__item`}
-      onClick={fn(item)}
+      className={`${page === item && 'active'} b-pagination__item`}
+      onClick={fn()}
     >
       {item}
     </PaginationItem>

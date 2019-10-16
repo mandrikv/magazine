@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useHistory, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Block, Wrapper } from 'sharedUi';
 import data from 'articles';
@@ -13,12 +14,24 @@ const propTypes = {
 
 const AllAds = (props) => {
   const limitItems = 3;
-  const [currentPage, setCurrentPage] = useState(1);
+
+  let {
+    page,
+  } = useParams();
+
+  if (page === undefined) page = 1;
 
   const {
     items,
     setAdsItems,
   } = props;
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const history = useHistory();
+
+  useEffect(() => {
+    setCurrentPage(page);
+  }, [page]);
 
   setAdsItems(data);
 
@@ -36,8 +49,9 @@ const AllAds = (props) => {
     n += 1;
   }
 
-  const onClick = page => () => {
-    setCurrentPage(page);
+  const onClick = goPage => () => {
+    setCurrentPage(goPage);
+    history.push(`/page/${goPage}`);
   };
 
   return (
@@ -56,9 +70,9 @@ const AllAds = (props) => {
             {output.map(item => (
               <PaginationAds
                 key={item}
-                currentPage={currentPage}
+                page={currentPage * 1}
                 item={item}
-                fn={onClick}
+                fn={onClick.bind(null, item)}
               />
             ))}
           </PaginationWrapper>

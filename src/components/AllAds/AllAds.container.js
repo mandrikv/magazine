@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { setAdsItems } from '../../store/ads/action';
 import AllAds from './AllAds.component';
 
@@ -10,7 +11,9 @@ const mapDispatchToProps = {
   setAdsItems,
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(AllAds);
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps,
+  )(AllAds),
+);

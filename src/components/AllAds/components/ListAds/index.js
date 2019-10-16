@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useHistory } from 'react-router-dom';
 import { Button } from 'sharedUi';
 import {
   ListAdsItem,
@@ -14,6 +15,11 @@ const propTypes = {
 
 const ListAds = (props) => {
   const { data } = props;
+  const history = useHistory();
+
+  const goItem = url => () => {
+    history.push(`/item/${url}`);
+  };
 
   return (
     <ListAdsItem className="l-ads__item">
@@ -30,7 +36,10 @@ const ListAds = (props) => {
         <AdsContent className="b-ads__content">
           {data.title && <h4 className="b-ads__title">{data.title}</h4>}
           {data.description && <p className="b-ads__description">{data.description}</p>}
-          <Button className="btn b-ads__btn">
+          <Button
+            className="btn b-ads__btn"
+            fn={goItem.bind(null, data.order)}
+          >
             Read more
           </Button>
         </AdsContent>
